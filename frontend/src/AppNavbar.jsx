@@ -27,7 +27,16 @@ function AppNavbar() {
                     </NavItem>
                 </>
             )
-        }        
+        }
+          if (role === "PLAYER") {
+            playerLinks = (
+                <>
+                    <NavItem>
+                        <NavLink className="nav-link-white" tag={Link} to="/achievements">Achievements</NavLink>
+                    </NavItem>
+                </>
+            )
+        }      
     })
 
     if (!jwt) {
